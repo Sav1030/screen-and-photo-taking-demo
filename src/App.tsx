@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div ref={divRef}>
-      <button onClick={startExam}>Start Examination</button>
+      <button onClick={startExam} className="btn btn-success">Start Examination</button>
       <h2>Screen Capture:</h2>
       {screenshotURL && <img src={screenshotURL} alt="Screen Capture" />}
       <h2>Webcam Photo:</h2>
