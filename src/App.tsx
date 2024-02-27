@@ -9,8 +9,8 @@ declare global {
 }
 
 function App() {
-  const [screenshotURL, setScreenshotURL] = useState<string>("");
   const [webcamPhotoURL, setWebcamPhotoURL] = useState<string>("");
+  const [screenshotURL, setScreenshotURL] = useState<string>("");
   const divRef = useRef<HTMLDivElement>(null);
 
   const startExam = async () => {
@@ -42,7 +42,7 @@ function App() {
       <button onClick={startExam} className="btn btn-success">Start Examination</button>
       <h2>Screen Capture:</h2>
       {screenshotURL && <img src={screenshotURL} alt="Screen Capture" />}
-      <h2>Webcam Photo:</h2>
+      <h2>Camera Photo:</h2>
       {webcamPhotoURL && <img src={webcamPhotoURL} alt="Webcam Capture" />}
     </div>
   );
