@@ -12,7 +12,6 @@ function App() {
   const [webcamPhotoURL, setWebcamPhotoURL] = useState<string>("");
   const [screenshotURL, setScreenshotURL] = useState<string>("");
   const divRef = useRef<HTMLDivElement>(null);
-
   const startExam = async () => {
     // Screen Capture
     const mediaStream: MediaStream = await navigator.mediaDevices.getDisplayMedia();
